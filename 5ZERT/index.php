@@ -28,14 +28,14 @@ if (isset($_GET['city']) && is_numeric($_GET['day'])){
     }
     if ($_GET['city']==1){
         $nmoney = $_GET['day'];
-        $nmoney *= 400 - $v;
+        $nmoney *= 400 - $money;
         echo "стоимость $nmoney ";
     }
     if ($_GET['city']==2){
         $nmoney = $_GET['day'];
-        $nmoney *= 400 - $v;
-        $nbmoney = $a/100 *10;
-        $ncmoney = $a + $b;
+        $nmoney *= 400 - $money;
+        $nbmoney = $nmoney/100 *10;
+        $ncmoney = $nmoney + $nbmoney;
         echo "стоимость $ncmoney ";
     }
     if ($_GET['city']==3){
